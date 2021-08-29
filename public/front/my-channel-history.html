@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plyr - Video Sharing HTML Template</title>
+
+  <!-- Vendor Stylesheets -->
+  <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+  <!-- Icon Fonts -->
+  <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css">
+
+  <!-- Plyr Style sheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+
+</head>
+
+<body class="boxed">
+
+  <!-- Main Wrapper Start -->
+  <div class="main-wrapper">
+
+    <!-- Nav Start -->
+    <div class="nav-wrapper">
+
+      <div class="navbar-logo">
+
+        <div class="aside-toggler toggle-aside">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <a href="index-2.html">
+          <img src="assets/img/logo.png" alt="logo">
+        </a>
+
+      </div>
+
+      <div class="navbar-menu">
+        <ul>
+          <li> <a href="index-2.html"> Explore </a> </li>
+          <li> <a href="browse.html"> Browse </a> </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Pages </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="my-channel.html">Channel</a>
+              <a class="dropdown-item" href="video-list.html">Video List</a>
+              <a class="dropdown-item" href="membership.html">Membership</a>
+              <a class="dropdown-item" href="login.html">Login</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar-search">
+        <form method="post">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for videos, channels..." value="">
+            <div class="input-group-append">
+              <button type="submit" class="btn-custom"> <i class="fas fa-search m-0"></i> </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="navbar-controls">
+        <ul>
+          <li class="dropdown">
+            <a class="pulse-video" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="far fa-pause-circle"></i> </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <h6 class="dropdown-header">New Video</h6>
+              <a class="dropdown-item" href="#"><i class="fas fa-upload"></i> Upload Video</a>
+              <a class="dropdown-item" href="#"> <i class="text-danger fas fa-circle"></i> Go Live</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="far fa-bell"></i> </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <h6 class="dropdown-header">Notifications</h6>
+              <div class="dropdown-scroll">
+                <a class="dropdown-item new-notification" href="#">
+                  <div class="media">
+                    <img class="img-sm" src="assets/img/channels/6.jpg" alt="channel">
+                    <div class="media-body">
+                      <span class="fs-14"> <b>Just Watch It</b> released a new video </span>
+                      <span>2 hours ago</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item new-notification" href="#">
+                  <div class="media">
+                    <img class="img-sm" src="assets/img/channels/5.jpg" alt="channel">
+                    <div class="media-body">
+                      <span class="fs-14"> <b>Live News One</b>'s livestream ended</span>
+                      <span>6 hours ago</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <div class="media">
+                    <img class="img-sm" src="assets/img/channels/6.jpg" alt="channel">
+                    <div class="media-body">
+                      <span class="fs-14"> <b>Just Watch It</b> subscribed to your channel </span>
+                      <span>12 hours ago</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <div class="media">
+                    <img class="img-sm" src="assets/img/channels/2.jpg" alt="channel">
+                    <div class="media-body">
+                      <span class="fs-14"> <b>Sicily Brandy</b> replied to your comment </span>
+                      <span>12 hours ago</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <div class="media">
+                    <img class="img-sm" src="assets/img/channels/3.jpg" alt="channel">
+                    <div class="media-body">
+                      <span class="fs-14"> <b>Jonathan Puck</b> liked your video </span>
+                      <span>17 hours ago</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="far fa-user"></i> </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-header dropdown-header-lg">
+                <div class="media user-info">
+                  <img src="assets/img/people/1.jpg" alt="user">
+                  <div class="media-body">
+                    <h6>Fringila</h6>
+                    <span class="fw-400">Free Member</span>
+                  </div>
+                </div>
+              </div>
+              <a class="dropdown-item" href="my-channel.html"><i class="far fa-user"></i> My Channel <span><i class="fas fa-chevron-right"></i></span> </a>
+              <a class="dropdown-item" href="membership.html"><i class="far fa-money-bill-alt"></i> Upgrade Plan <span><i class="fas fa-chevron-right"></i></span> </a>
+              <div class="dropdown-item dark-mode-toggle">
+                <i class="far fa-moon"></i> Dark Mode
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                  <label class="custom-control-label" for="customSwitch1"></label>
+                </div>
+              </div>
+              <div class="dropdown-divider">
+              </div>
+              <a class="dropdown-item" href="my-channel-settings.html"><i class="fas fa-cog"></i> Settings <span><i class="fas fa-chevron-right"></i></span> </a>
+              <a class="dropdown-item" href="help-center.html"><i class="far fa-question-circle"></i> Help <span><i class="fas fa-chevron-right"></i></span> </a>
+              <a class="dropdown-item text-danger" href="login.html"><i class="fas fa-sign-out-alt"></i> Sign Out </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- Nav End -->
+
+    <!-- Sidebar Start -->
+    <div class="sidebar-wrapper">
+
+      <div class="sidebar-overlay toggle-aside"></div>
+      <aside class="sidebar">
+        <div class="aside-scroll">
+
+          <div class="aside-section">
+            <span class="aside-title">Recommended</span>
+
+            <!-- Recommended Channels Start -->
+            <ul class="recommended-channels">
+              <li class="live">
+                <a class="media" href="single-channel.html">
+                  <img src="assets/img/channels/1.jpg" alt="channel">
+                  <div class="media-body">
+                    <h6>Jumpy Joe</h6>
+                    <span>Gaming / Entertainment</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="media" href="single-channel.html">
+                  <img src="assets/img/channels/2.jpg" alt="channel">
+                  <div class="media-body">
+                    <h6>Sicily Brandy</h6>
+                    <span>Education / Tutorials</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="media" href="single-channel.html">
+                  <img src="assets/img/channels/3.jpg" alt="channel">
+                  <div class="media-body">
+                    <h6>Jonathan Puck</h6>
+                    <span>Entertainment</span>
+                  </div>
+                </a>
+              </li>
+              <li class="live">
+                <a class="media" href="single-channel.html">
+                  <img src="assets/img/channels/4.jpg" alt="channel">
+                  <div class="media-body">
+                    <h6>Laila Manchy</h6>
+                    <span>Music / Dance</span>
+                  </div>
+                </a>
+              </li>
+              <li class="live">
+                <a class="media" href="single-channel.html">
+                  <img src="assets/img/channels/5.jpg" alt="channel">
+                  <div class="media-body">
+                    <h6>Live News One</h6>
+                    <span>News</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="media" href="single-channel.html">
+                  <img src="assets/img/channels/6.jpg" alt="channel">
+                  <div class="media-body">
+                    <h6>Just Watch It</h6>
+                    <span>Movies / TV</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <div class="aside-button">
+              <a href="#" class="btn-custom secondary">View More</a>
+            </div>
+            <!-- Recommended Channels End -->
+
+          </div>
+
+          <div class="aside-section">
+            <span class="aside-title">Helpful Links</span>
+
+            <ul class="aside-menu">
+              <li> <a href="about-us.html"><i class="fas fa-address-card"></i> About Us</a> </li>
+              <li> <a href="help-center.html"><i class="fas fa-question-circle"></i> Help Center</a> </li>
+              <li> <a href="my-channel-settings.html"><i class="fas fa-cog"></i> Settings</a> </li>
+              <li> <a href="legal.html"><i class="fas fa-balance-scale"></i> Legal</a> </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Content Start -->
+    <div class="main-content">
+
+      <!-- Inner Banner Start -->
+      <div class="page-subheader">
+        <div class="page-subheader-inner" style="background-image: url('assets/img/subheader-2.jpg')"></div>
+        <div class="page-subheader-controls">
+          <div class="page-subheader-controls-inner">
+            <div class="channel-thumbnail">
+              <img src="assets/img/channels-lg/2.jpg" alt="channel">
+            </div>
+
+            <div class="page-subheader-left page-subheader-nav">
+              <ul>
+                <li> <a href="my-channel.html">Home</a> </li>
+                <li> <a href="my-channel-videos.html">Videos</a> </li>
+                <li> <a href="my-channel-playlists.html">Playlists</a> </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> More </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="my-channel-about.html"> <i class="fas fa-address-card"></i> About</a>
+                    <a class="dropdown-item" href="my-channel-subscribers.html"> <i class="fas fa-list"></i> Subscribers</a>
+                    <a class="dropdown-item" href="my-channel-watch-later.html"> <i class="fas fa-stopwatch"></i> Watch Later</a>
+                    <a class="dropdown-item" href="my-channel-history.html"> <i class="fas fa-history"></i> History</a>
+                    <a class="dropdown-item" href="my-channel-settings.html"> <i class="fas fa-cog"></i> Settings</a>
+                    <a class="dropdown-item" href="my-channel-account.html"> <i class="fas fa-user"></i> Account Management</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="page-subheader-right">
+              <ul class="social-media">
+                <li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
+                <li> <a href="#"> <i class="fab fa-pinterest-p"></i> </a> </li>
+                <li> <a href="#"> <i class="fab fa-instagram"></i> </a> </li>
+              </ul>
+              <a href="#" class="btn-custom secondary"> <i class="fas fa-upload"></i> Upload</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Inner Banner End -->
+
+      <div class="main-content-inner">
+
+        <div class="section section-mobile border-0">
+
+          <!-- Videos Start -->
+          <div class="row">
+
+            <div class="col-lg-4">
+
+              <div class="page-options">
+
+                <div class="dropleft ellipses-dropdown">
+                  <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v"></i> </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="single-channel.html"><i class="far fa-play-circle"></i> Stop tracking</a>
+                    <a class="dropdown-item" href="single-channel.html"> <i class="fas fa-ban"></i>Clear history</a>
+                    <a class="dropdown-item" href="#"><i class="far fa-share-square"></i> Share history</a>
+                  </div>
+                </div>
+                <h3>History</h3>
+                <div class="page-options-meta">
+                  <span>789 videos</span>
+                  <span>3,289 minutes</span>
+                </div>
+
+                <h5>History Type</h5>
+                <div class="history-type">
+                  <div class="history-item">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="watchHistory" checked name="historyRadio" class="custom-control-input">
+                      <label class="custom-control-label" for="watchHistory">Watch History</label>
+                    </div>
+                  </div>
+                  <div class="history-item">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="searchHistory" name="historyRadio" class="custom-control-input">
+                      <label class="custom-control-label" for="searchHistory">Search History</label>
+                    </div>
+                  </div>
+                  <div class="history-item">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="commentsHistory" name="historyRadio" class="custom-control-input">
+                      <label class="custom-control-label" for="commentsHistory">Comments History</label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-lg-8">
+
+              <!-- Video Start -->
+              <div class="video video-list video-with-controls">
+                <div class="video-thumbnail">
+                  <div class="video-thumbnail-inner">
+                    <a href="single-video.html"><img src="assets/img/videos/1.jpg" alt="video"></a>
+                    <a href="#" class="video-control watch-later-btn" data-toggle="tooltip" title="Watch Later">
+                      <i class="fas fa-stopwatch"></i>
+                    </a>
+                    <a href="single-video.html" class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </a>
+                    <span class="video-duration">3:26</span>
+                  </div>
+                </div>
+                <div class="video-content">
+                  <div class="dropleft ellipses-dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v"></i> </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="single-channel.html"> <i class="fas fa-ban"></i> Remove from list</a>
+                      <a class="dropdown-item" href="single-channel.html"><i class="far fa-user"></i> View channel</a>
+                      <a class="dropdown-item" href="#"><i class="far fa-share-square"></i> Share video</a>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <a href="single-channel.html"><img src="assets/img/channels/3.jpg" alt="channel"></a>
+                    <div class="media-body">
+                      <h6> <a href="#">BFX Riding on the mounts - GoPro video</a> </h6>
+                      <a class="video-author" href="single-channel.html"><i class="fas fa-check-double"></i> Jonathan Puck</a>
+                      <div class="video-meta">
+                        <span>14k views</span>
+                        <span>2 weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Video End -->
+
+              <!-- Video Start -->
+              <div class="video video-list video-with-controls">
+                <div class="video-thumbnail">
+                  <div class="video-thumbnail-inner">
+                    <a href="single-video.html"><img src="assets/img/videos/2.jpg" alt="video"></a>
+                    <a href="#" class="video-control watch-later-btn" data-toggle="tooltip" title="Watch Later">
+                      <i class="fas fa-stopwatch"></i>
+                    </a>
+                    <a href="single-video.html" class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </a>
+                    <span class="video-duration">4:26</span>
+                  </div>
+                </div>
+                <div class="video-content">
+                  <div class="dropleft ellipses-dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v"></i> </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="single-channel.html"> <i class="fas fa-ban"></i> Remove from list</a>
+                      <a class="dropdown-item" href="single-channel.html"><i class="far fa-user"></i> View channel</a>
+                      <a class="dropdown-item" href="#"><i class="far fa-share-square"></i> Share video</a>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <a href="single-channel.html"><img src="assets/img/channels/4.jpg" alt="channel"></a>
+                    <div class="media-body">
+                      <h6> <a href="#">Tomorrow land music festival sneak peek</a> </h6>
+                      <a class="video-author" href="single-channel.html"><i class="fas fa-check-double"></i> Laila Manchy</a>
+                      <div class="video-meta">
+                        <span>12k views</span>
+                        <span>1 week ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Video End -->
+
+              <!-- Video Start -->
+              <div class="video video-list video-with-controls">
+                <div class="video-thumbnail">
+                  <div class="video-thumbnail-inner">
+                    <a href="single-video.html"><img src="assets/img/videos/3.jpg" alt="video"></a>
+                    <a href="#" class="video-control watch-later-btn" data-toggle="tooltip" title="Watch Later">
+                      <i class="fas fa-stopwatch"></i>
+                    </a>
+                    <a href="single-video.html" class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </a>
+                    <span class="video-duration">12:13</span>
+                  </div>
+                </div>
+                <div class="video-content">
+                  <div class="dropleft ellipses-dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v"></i> </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="single-channel.html"> <i class="fas fa-ban"></i> Remove from list</a>
+                      <a class="dropdown-item" href="single-channel.html"><i class="far fa-user"></i> View channel</a>
+                      <a class="dropdown-item" href="#"><i class="far fa-share-square"></i> Share video</a>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <a href="single-channel.html"><img src="assets/img/channels/2.jpg" alt="channel"></a>
+                    <div class="media-body">
+                      <h6> <a href="#">4K Timelapse of sundown on the beach</a> </h6>
+                      <a class="video-author" href="single-channel.html"> Sicily Brandy</a>
+                      <div class="video-meta">
+                        <span>244k views</span>
+                        <span>2 days ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Video End -->
+
+              <!-- Video Start -->
+              <div class="video video-list video-with-controls">
+                <div class="video-thumbnail">
+                  <div class="video-thumbnail-inner">
+                    <a href="single-video.html"><img src="assets/img/videos/4.jpg" alt="video"></a>
+                    <a href="#" class="video-control watch-later-btn" data-toggle="tooltip" title="Watch Later">
+                      <i class="fas fa-stopwatch"></i>
+                    </a>
+                    <a href="single-video.html" class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </a>
+                    <span class="video-duration">64:26</span>
+                  </div>
+                </div>
+                <div class="video-content">
+                  <div class="dropleft ellipses-dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v"></i> </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="single-channel.html"> <i class="fas fa-ban"></i> Remove from list</a>
+                      <a class="dropdown-item" href="single-channel.html"><i class="far fa-user"></i> View channel</a>
+                      <a class="dropdown-item" href="#"><i class="far fa-share-square"></i> Share video</a>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <a href="single-channel.html"><img src="assets/img/channels/4.jpg" alt="channel"></a>
+                    <div class="media-body">
+                      <h6> <a href="#">Music remix livestream - 24 hours stream</a> </h6>
+                      <a class="video-author" href="single-channel.html"><i class="fas fa-check-double"></i>Laila Manchy</a>
+                      <div class="video-meta">
+                        <span>24k views</span>
+                        <span>3 days ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Video End -->
+
+              <!-- Video Start -->
+              <div class="video video-list video-with-controls">
+                <div class="video-thumbnail">
+                  <div class="video-thumbnail-inner">
+                    <a href="single-video.html"><img src="assets/img/videos/5.jpg" alt="video"></a>
+                    <a href="#" class="video-control watch-later-btn" data-toggle="tooltip" title="Watch Later">
+                      <i class="fas fa-stopwatch"></i>
+                    </a>
+                    <a href="single-video.html" class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </a>
+                    <span class="video-duration">3:26</span>
+                  </div>
+                </div>
+                <div class="video-content">
+                  <div class="dropleft ellipses-dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v"></i> </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="single-channel.html"> <i class="fas fa-ban"></i> Remove from list</a>
+                      <a class="dropdown-item" href="single-channel.html"><i class="far fa-user"></i> View channel</a>
+                      <a class="dropdown-item" href="#"><i class="far fa-share-square"></i> Share video</a>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <a href="single-channel.html"><img src="assets/img/channels/8.jpg" alt="channel"></a>
+                    <div class="media-body">
+                      <h6> <a href="#">How to properly cook a shrimp noodle dish</a> </h6>
+                      <a class="video-author" href="single-channel.html">Daily Cooking</a>
+                      <div class="video-meta">
+                        <span>67k views</span>
+                        <span>2 weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Video End -->
+
+              <!-- Video Start -->
+              <div class="video video-list video-with-controls">
+                <div class="video-thumbnail">
+                  <div class="video-thumbnail-inner">
+                    <a href="single-video.html"><img src="assets/img/videos/6.jpg" alt="video"></a>
+                    <a href="#" class="video-control watch-later-btn" data-toggle="tooltip" title="Watch Later">
+                      <i class="fas fa-stopwatch"></i>
+                    </a>
+                    <a href="single-video.html" class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </a>
+                    <span class="video-duration">4:26</span>
+                  </div>
+                </div>
+                <div class="video-content">
+                  <div class="dropleft ellipses-dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v"></i> </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="single-channel.html"> <i class="fas fa-ban"></i> Remove from list</a>
+                      <a class="dropdown-item" href="single-channel.html"><i class="far fa-user"></i> View channel</a>
+                      <a class="dropdown-item" href="#"><i class="far fa-share-square"></i> Share video</a>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <a href="single-channel.html"><img src="assets/img/channels/8.jpg" alt="channel"></a>
+                    <div class="media-body">
+                      <h6> <a href="#">Revolutionizing the luxurious crab dish</a> </h6>
+                      <a class="video-author" href="single-channel.html">Daily Cooking</a>
+                      <div class="video-meta">
+                        <span>14k views</span>
+                        <span>2 weeks ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Video End -->
+
+              <!-- Video Start -->
+              <div class="video video-list video-with-controls">
+                <div class="video-thumbnail">
+                  <div class="video-thumbnail-inner">
+                    <a href="single-video.html"><img src="assets/img/videos/7.jpg" alt="video"></a>
+                    <a href="#" class="video-control watch-later-btn" data-toggle="tooltip" title="Watch Later">
+                      <i class="fas fa-stopwatch"></i>
+                    </a>
+                    <a href="single-video.html" class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </a>
+                    <span class="video-duration">8:38</span>
+                  </div>
+                </div>
+                <div class="video-content">
+                  <div class="dropleft ellipses-dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-ellipsis-v"></i> </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="single-channel.html"> <i class="fas fa-ban"></i> Remove from list</a>
+                      <a class="dropdown-item" href="single-channel.html"><i class="far fa-user"></i> View channel</a>
+                      <a class="dropdown-item" href="#"><i class="far fa-share-square"></i> Share video</a>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <a href="single-channel.html"><img src="assets/img/channels/7.jpg" alt="channel"></a>
+                    <div class="media-body">
+                      <h6> <a href="#">Learn how to submit forms with AJAX</a> </h6>
+                      <a class="video-author" href="single-channel.html">Mikayla Yonder</a>
+                      <div class="video-meta">
+                        <span>13k views</span>
+                        <span>1 week ago</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Video End -->
+
+            </div>
+
+          </div>
+          <!-- Videos End -->
+
+        </div>
+
+        <!-- Footer Start -->
+        <footer class="footer">
+          <div class="footer-top">
+            <div class="row">
+              <div class="col-md-9">
+                <img src="assets/img/logo-light.png" alt="logo">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="copyright">Made with <i class="fas fa-heart"></i> by AndromedaThemes</p>
+              </div>
+              <div class="col-md-6">
+                <ul class="social-media">
+                  <li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
+                  <li> <a href="#"> <i class="fab fa-twitter"></i> </a> </li>
+                  <li> <a href="#"> <i class="fab fa-linkedin-in"></i> </a> </li>
+                  <li> <a href="#"> <i class="fab fa-pinterest-p"></i> </a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer End -->
+
+      </div>
+
+    </div>
+    <!-- Content End -->
+
+  </div>
+  <!-- Main Wrapper End -->
+
+  <!-- Vendor Scripts -->
+  <script src="assets/js/plugins/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/plugins/popper.min.js"></script>
+  <script src="assets/js/plugins/bootstrap.min.js"></script>
+  <script src="assets/js/plugins/jquery.slimScroll.min.js"></script>
+  <script src="assets/js/plugins/swiper.min.js"></script>
+
+  <!-- Plyr Scripts -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+
+</html>

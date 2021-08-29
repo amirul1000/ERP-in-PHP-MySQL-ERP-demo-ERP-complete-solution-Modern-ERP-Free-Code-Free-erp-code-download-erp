@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plyr - Video Sharing HTML Template</title>
+
+  <!-- Vendor Stylesheets -->
+  <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+  <!-- Icon Fonts -->
+  <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css">
+
+  <!-- Plyr Style sheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+
+</head>
+
+<body class="boxed">
+
+  <!-- Main Wrapper Start -->
+  <div class="main-wrapper">
+
+    <!-- Nav Start -->
+    <div class="nav-wrapper">
+
+      <div class="navbar-logo">
+
+        <div class="aside-toggler toggle-aside">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <a href="index-2.html">
+          <img src="assets/img/logo.png" alt="logo">
+        </a>
+
+      </div>
+
+      <div class="navbar-menu">
+        <ul>
+          <li> <a href="index-2.html"> Explore </a> </li>
+          <li> <a href="browse.html"> Browse </a> </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Pages </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="my-channel.html">Channel</a>
+              <a class="dropdown-item" href="video-list.html">Video List</a>
+              <a class="dropdown-item" href="membership.html">Membership</a>
+              <a class="dropdown-item" href="login.html">Login</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar-search">
+        <form method="post">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for videos, channels..." value="">
+            <div class="input-group-append">
+              <button type="submit" class="btn-custom"> <i class="fas fa-search m-0"></i> </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="navbar-controls">
+        <ul>
+          <li class="dropdown">
+            <a class="pulse-video" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="far fa-pause-circle"></i> </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <h6 class="dropdown-header">New Video</h6>
+              <a class="dropdown-item" href="#"><i class="fas fa-upload"></i> Upload Video</a>
+              <a class="dropdown-item" href="#"> <i class="text-danger fas fa-circle"></i> Go Live</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="far fa-bell"></i> </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <h6 class="dropdown-header">Notifications</h6>
+              <div class="dropdown-scroll">
+                <a class="dropdown-item new-notification" href="#">
+                  <div class="media">
+                    <img class="img-sm" src="assets/img/channels/6.jpg" alt="channel">
+                    <div class="media-body">
+                      <span class="fs-14"> <b>Just Watch It</b> released a new video </span>
+                      <span>2 hours ago</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item new-notification" href="#">
+                  <div class="media">
+                    <img class="img-sm" src="assets/img/channels/5.jpg" alt="channel">
+                    <div class="media-body">
+                      <span class="fs-14"> <b>Live News One</b>'s livestream ended</span>
+                      <span>6 hours ago</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <div class="media">
+                    <img class="img-sm" src="assets/img/channels/6.jpg" alt="channel">
+                    <div class="media-body">
+                      <span class="fs-14"> <b>Just Watch It</b> subscribed to your channel </span>
+                      <span>12 hours ago</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <div class="media">
+                    <img class="img-sm" src="assets/img/channels/2.jpg" alt="channel">
+                    <div class="media-body">
+                      <span class="fs-14"> <b>Sicily Brandy</b> replied to your comment </span>
+                      <span>12 hours ago</span>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <div class="media">
+                    <img class="img-sm" src="assets/img/channels/3.jpg" alt="channel">
+                    <div class="media-body">
+                      <span class="fs-14"> <b>Jonathan Puck</b> liked your video </span>
+                      <span>17 hours ago</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="far fa-user"></i> </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-header dropdown-header-lg">
+                <div class="media user-info">
+                  <img src="assets/img/people/1.jpg" alt="user">
+                  <div class="media-body">
+                    <h6>Fringila</h6>
+                    <span class="fw-400">Free Member</span>
+                  </div>
+                </div>
+              </div>
+              <a class="dropdown-item" href="my-channel.html"><i class="far fa-user"></i> My Channel <span><i class="fas fa-chevron-right"></i></span> </a>
+              <a class="dropdown-item" href="membership.html"><i class="far fa-money-bill-alt"></i> Upgrade Plan <span><i class="fas fa-chevron-right"></i></span> </a>
+              <div class="dropdown-item dark-mode-toggle">
+                <i class="far fa-moon"></i> Dark Mode
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                  <label class="custom-control-label" for="customSwitch1"></label>
+                </div>
+              </div>
+              <div class="dropdown-divider">
+              </div>
+              <a class="dropdown-item" href="my-channel-settings.html"><i class="fas fa-cog"></i> Settings <span><i class="fas fa-chevron-right"></i></span> </a>
+              <a class="dropdown-item" href="help-center.html"><i class="far fa-question-circle"></i> Help <span><i class="fas fa-chevron-right"></i></span> </a>
+              <a class="dropdown-item text-danger" href="login.html"><i class="fas fa-sign-out-alt"></i> Sign Out </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- Nav End -->
+
+    <!-- Sidebar Start -->
+    <div class="sidebar-wrapper">
+
+      <div class="sidebar-overlay toggle-aside"></div>
+      <aside class="sidebar">
+        <div class="aside-scroll">
+
+          <div class="aside-section">
+            <span class="aside-title">Recommended</span>
+
+            <!-- Recommended Channels Start -->
+            <ul class="recommended-channels">
+              <li class="live">
+                <a class="media" href="single-channel.html">
+                  <img src="assets/img/channels/1.jpg" alt="channel">
+                  <div class="media-body">
+                    <h6>Jumpy Joe</h6>
+                    <span>Gaming / Entertainment</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="media" href="single-channel.html">
+                  <img src="assets/img/channels/2.jpg" alt="channel">
+                  <div class="media-body">
+                    <h6>Sicily Brandy</h6>
+                    <span>Education / Tutorials</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="media" href="single-channel.html">
+                  <img src="assets/img/channels/3.jpg" alt="channel">
+                  <div class="media-body">
+                    <h6>Jonathan Puck</h6>
+                    <span>Entertainment</span>
+                  </div>
+                </a>
+              </li>
+              <li class="live">
+                <a class="media" href="single-channel.html">
+                  <img src="assets/img/channels/4.jpg" alt="channel">
+                  <div class="media-body">
+                    <h6>Laila Manchy</h6>
+                    <span>Music / Dance</span>
+                  </div>
+                </a>
+              </li>
+              <li class="live">
+                <a class="media" href="single-channel.html">
+                  <img src="assets/img/channels/5.jpg" alt="channel">
+                  <div class="media-body">
+                    <h6>Live News One</h6>
+                    <span>News</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="media" href="single-channel.html">
+                  <img src="assets/img/channels/6.jpg" alt="channel">
+                  <div class="media-body">
+                    <h6>Just Watch It</h6>
+                    <span>Movies / TV</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <div class="aside-button">
+              <a href="#" class="btn-custom secondary">View More</a>
+            </div>
+            <!-- Recommended Channels End -->
+
+          </div>
+
+          <div class="aside-section">
+            <span class="aside-title">Helpful Links</span>
+
+            <ul class="aside-menu">
+              <li> <a href="about-us.html"><i class="fas fa-address-card"></i> About Us</a> </li>
+              <li> <a href="help-center.html"><i class="fas fa-question-circle"></i> Help Center</a> </li>
+              <li> <a href="my-channel-settings.html"><i class="fas fa-cog"></i> Settings</a> </li>
+              <li> <a href="legal.html"><i class="fas fa-balance-scale"></i> Legal</a> </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Content Start -->
+    <div class="main-content">
+
+      <!-- Inner Banner Start -->
+      <div class="page-subheader">
+        <div class="page-subheader-inner" style="background-image: url('assets/img/subheader-2.jpg')"></div>
+        <div class="page-subheader-controls">
+          <div class="page-subheader-controls-inner">
+            <div class="channel-thumbnail">
+              <img src="assets/img/channels-lg/2.jpg" alt="channel">
+            </div>
+
+            <div class="page-subheader-left page-subheader-nav">
+              <ul>
+                <li> <a href="my-channel.html">Home</a> </li>
+                <li> <a href="my-channel-videos.html">Videos</a> </li>
+                <li> <a href="my-channel-playlists.html">Playlists</a> </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> More </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="my-channel-about.html"> <i class="fas fa-address-card"></i> About</a>
+                    <a class="dropdown-item" href="my-channel-subscribers.html"> <i class="fas fa-list"></i> Subscribers</a>
+                    <a class="dropdown-item" href="my-channel-watch-later.html"> <i class="fas fa-stopwatch"></i> Watch Later</a>
+                    <a class="dropdown-item" href="my-channel-history.html"> <i class="fas fa-history"></i> History</a>
+                    <a class="dropdown-item" href="my-channel-settings.html"> <i class="fas fa-cog"></i> Settings</a>
+                    <a class="dropdown-item" href="my-channel-account.html"> <i class="fas fa-user"></i> Account Management</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="page-subheader-right">
+              <ul class="social-media">
+                <li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
+                <li> <a href="#"> <i class="fab fa-pinterest-p"></i> </a> </li>
+                <li> <a href="#"> <i class="fab fa-instagram"></i> </a> </li>
+              </ul>
+              <a href="#" class="btn-custom secondary"> <i class="fas fa-upload"></i> Upload</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Inner Banner End -->
+
+      <div class="main-content-inner">
+
+        <div class="section section-mobile border-0">
+
+          <div class="row">
+
+            <!-- Account Information Start -->
+            <div class="col-lg-4">
+              <div class="page-options">
+                <h3>Account Management</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+              </div>
+            </div>
+            <!-- Account Information End -->
+
+            <!-- Account Information Edit Start -->
+            <div class="col-lg-8">
+
+              <div class="card">
+                <div class="card-body">
+
+                  <div class="section-title-wrap">
+                    <h4>Basic Information</h4>
+                  </div>
+
+                  <form method="post">
+
+                    <!-- Profile img -->
+                    <div class="btn-file-upload-wrapper">
+                      <div class="user-img-upload">
+                        <div class="btn-file-upload-input">
+                          <input type="file" class="upload-input">
+                          <button type="button" class="btn-file-upload btn-custom secondary btn-icon"> <i class="fas fa-pencil-alt m-0"></i> </button>
+                        </div>
+                        <img class="img-preview" src="assets/img/channels-lg/2.jpg" alt="user">
+                      </div>
+                    </div>
+                    <!-- /Profile img -->
+
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Full Name</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="John Doe" value="">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Username</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="john-doe88" value="">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Email Address</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="info@john.com" value="">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Phone</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="(478) 318 129" value="">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">About Me</label>
+                      <div class="col-sm-9">
+                        <textarea class="form-control" rows="4" placeholder="Write something about you"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="text-right">
+                      <button type="submit" class="btn-custom" name="button">Save Changes</button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+
+              <div class="card mb-0">
+
+                <div class="card-body">
+
+                  <div class="section-title-wrap">
+                    <h4>Billing Address</h4>
+                  </div>
+
+                  <form method="post">
+
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Country</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="United States" value="">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">City</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="New Jersey" value="">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Address</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="7309 Orange Ave. Battle Ground" value="">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Zip Code</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="7309" value="">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Email Address</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="info@john.com" value="">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-sm-3 col-form-label">Phone</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" placeholder="(478) 318 129" value="">
+                      </div>
+                    </div>
+
+                    <div class="text-right">
+                      <button type="submit" class="btn-custom" name="button">Save Changes</button>
+                    </div>
+
+                  </form>
+
+                </div>
+
+
+
+              </div>
+
+            </div>
+            <!-- Account Information Edit End -->
+
+          </div>
+
+        </div>
+
+
+        <!-- Footer Start -->
+        <footer class="footer">
+          <div class="footer-top">
+            <div class="row">
+              <div class="col-md-9">
+                <img src="assets/img/logo-light.png" alt="logo">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="copyright">Made with <i class="fas fa-heart"></i> by AndromedaThemes</p>
+              </div>
+              <div class="col-md-6">
+                <ul class="social-media">
+                  <li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
+                  <li> <a href="#"> <i class="fab fa-twitter"></i> </a> </li>
+                  <li> <a href="#"> <i class="fab fa-linkedin-in"></i> </a> </li>
+                  <li> <a href="#"> <i class="fab fa-pinterest-p"></i> </a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer End -->
+
+      </div>
+
+    </div>
+    <!-- Content End -->
+
+  </div>
+  <!-- Main Wrapper End -->
+
+  <!-- Vendor Scripts -->
+  <script src="assets/js/plugins/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/plugins/popper.min.js"></script>
+  <script src="assets/js/plugins/bootstrap.min.js"></script>
+  <script src="assets/js/plugins/jquery.slimScroll.min.js"></script>
+  <script src="assets/js/plugins/swiper.min.js"></script>
+
+  <!-- Plyr Scripts -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+
+</html>
